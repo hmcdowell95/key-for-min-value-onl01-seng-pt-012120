@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
   else
     min_value = name_hash.first[1]
     min_key = name_hash.first[0]
-    name_hash.collect do |k, v|
+    name_hash.each do |k, v|
       if v < min_value
         min_value = v 
         min_key = k 
